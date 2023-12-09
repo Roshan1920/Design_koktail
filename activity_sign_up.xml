@@ -1,0 +1,239 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Sign_up"
+    android:background="@drawable/de">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+        <ImageView
+            android:id="@+id/profilePhoto"
+            android:layout_width="150dp"
+            android:layout_height="200dp"
+            android:src="@drawable/profileimg"
+
+            />
+
+        <Button
+            android:id="@+id/pickPhotoButton"
+            android:layout_width="103dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/profilePhoto"
+            android:layout_marginStart="22dp"
+            android:layout_marginTop="-53dp"
+            android:layout_toEndOf="@id/profilePhoto"
+            android:text="Pick Photo"
+            android:textSize="10sp" />
+
+        <LinearLayout
+            android:id="@+id/linearLayout"
+            android:layout_width="match_parent"
+            android:layout_height="1050dp"
+
+            android:layout_marginTop="200dp"
+            android:orientation="vertical"
+            android:padding="36dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <!--Spinner widget-->
+
+
+            <com.google.android.material.textfield.TextInputLayout
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                android:layout_marginTop="12dp">
+
+                <com.google.android.material.textfield.TextInputEditText
+
+                    android:id="@+id/edit_text_full_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:color="#144970"
+                    android:ems="10"
+                    android:hint="Full Name"
+                    android:maxLength="30" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/email_id"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:hint="Email Id"
+                    android:maxEms="10"
+                    android:textColor="#144970" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+
+            <com.google.android.material.textfield.TextInputLayout
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:layout_width="match_parent"
+                app:passwordToggleEnabled="true"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/enter_entrance_marks"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+
+                    android:hint="Create your Password"
+                    android:inputType="number"
+                    android:maxLength="5"
+                    android:textColor="#000" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+            <RadioGroup
+                android:id="@+id/radio_button_gender"
+                android:layout_width="362dp"
+                android:layout_height="54dp"
+                android:orientation="horizontal"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="-2.659"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="-2.345">
+
+                <RadioButton
+                    android:id="@+id/radio_button_male"
+
+                    android:layout_width="89dp"
+
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="23dp"
+                    android:text="Male" />
+
+                <RadioButton
+                    android:id="@+id/radio_button_female"
+                    android:layout_width="135dp"
+                    android:layout_height="36dp"
+                    android:layout_marginStart="38dp"
+                    android:text="Female" />
+            </RadioGroup>
+
+            <com.google.android.material.textfield.TextInputLayout
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/input_phone_no"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Contact No"
+                    android:inputType="number"
+                    android:maxLength="10"
+                    android:textColor="#000" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+
+            <TextView
+                android:layout_width="290dp"
+                android:layout_height="32dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginLeft="150dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginEnd="161dp"
+                android:text="Type of Farmer"
+                android:textColor="#FF108786"
+                android:textSize="22sp"
+                android:textStyle="bold" />
+
+            <RadioGroup
+                android:id="@+id/radio_button_course"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp">
+
+                <RadioButton
+                    android:id="@+id/ME"
+                    android:layout_width="325dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="00dp"
+
+                    android:text="Urban Farmer"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintVertical_bias="0.794" />
+
+                <RadioButton
+                    android:id="@+id/PE"
+                    android:layout_width="325dp"
+                    android:layout_height="wrap_content"
+                    android:text="Rural Farmer"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintVertical_bias="0.893" />
+
+
+            </RadioGroup>
+
+
+            <com.google.android.material.textfield.TextInputLayout
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                android:layout_marginTop="20dp">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/Adreess"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Residential Address"
+                    android:inputType="text"
+                    android:maxLength="50"
+                    android:textColor="#000" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+
+                <Button
+                    android:id="@+id/selectDateButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Select Date of Birth"
+                    android:layout_marginTop="70dp"
+                    android:onClick="showDatePickerDialog" />
+
+
+
+            <androidx.constraintlayout.utils.widget.MotionButton
+                android:id="@+id/fil_form"
+                android:layout_width="325dp"
+                android:layout_height="40dp"
+                android:layout_marginTop="140dp"
+                android:background="#FF018786"
+                android:text="Sign Up"
+                android:layout_marginBottom="-1dp"
+                android:textColor="@color/white"
+                android:textSize="22sp" />
+
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</ScrollView>
